@@ -1,0 +1,57 @@
+:root {
+  --terminal-bg: #000000;
+  --terminal-fg: #e0e0e0;
+  --terminal-accent: #2d5a8f;
+  --terminal-bright: #4a90e2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
+  background-color: var(--terminal-bg);
+  color: var(--terminal-fg);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--terminal-bright);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--terminal-accent);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}

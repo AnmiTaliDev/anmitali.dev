@@ -1,0 +1,17 @@
+.terminal {
+  width: 100%;
+  background-color: transparent;
+}
+
+.content {
+  padding: 2rem;
+  font-size: 14px;
+  overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 1rem;
+    font-size: 12px;
+  }
+}

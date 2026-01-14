@@ -1,0 +1,14 @@
+.ascii {
+  color: var(--terminal-accent);
+  font-size: 14px;
+  line-height: 1.2;
+  white-space: pre;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .ascii {
+    text-align: center;
+    font-size: 12px;
+  }
+}
