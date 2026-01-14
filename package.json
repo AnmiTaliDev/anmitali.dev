@@ -23,6 +23,7 @@
   "homepage": "https://github.com/AnmiTaliDev/anmitali.dev#readme",
   "dependencies": {
     "next": "^16.1.1",
+    "next-themes": "^0.4.6",
     "react": "^19.2.3",
     "react-dom": "^19.2.3"
   },
