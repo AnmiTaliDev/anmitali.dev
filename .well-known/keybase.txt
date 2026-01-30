@@ -1,0 +1,74 @@
+==================================================================
+https://keybase.io/anmitalidev
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://anmitali.dev
+  * I am anmitalidev (https://keybase.io/anmitalidev) on keybase.
+  * I have a public key with fingerprint F57B BC55 AC9D 822B 385F  A2C9 0E0E 31E2 07AD F598
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101eb662d61ce11e46685d8191b3dc1fd875a0f43f359fab295f6a138477177f5620a",
+      "fingerprint": "f57bbc55ac9d822b385fa2c90e0e31e207adf598",
+      "host": "keybase.io",
+      "key_id": "0e0e31e207adf598",
+      "kid": "0101eb662d61ce11e46685d8191b3dc1fd875a0f43f359fab295f6a138477177f5620a",
+      "uid": "ebfe32cc38e82f8e99a4e4e82aff9219",
+      "username": "anmitalidev"
+    },
+    "service": {
+      "hostname": "anmitali.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1769791254,
+  "expire_in": 157680000,
+  "prev": "c22c8d41b34d2fea3ccd632354473fee4121a747e7f19b6a3b883b5df9b933d3",
+  "seqno": 3,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.17
+Comment: https://keybase.io/crypto
+
+yMM/AnicrZJtUFRVGMeXBTMwYXsBMndGOQTiuOE99/1uDDToiE4SjTZhgi335Vy4
+AnuX3bvUitjkpCsKOsAgaTBhDbvVKAYqtUwYkDiCmdGgIjYhMtKMNFSEw5A5dq/V
+l/ra+XJent///zznmefc4nBTVFhv/nhP7QMsIuxi71GvSdk5FlcBBFXyAXsFKEYP
+N1QiIY/mKFYkYAcYxCASaBqXaCgiCBFJ0ywlsZCDAiGJUJZYhuIxmSRkguJkXsA5
+SqZ5SLAkw0CGkSkax3hgA7LiLERul1txarqtTDGCIFIUL3ISi+MCwVIyj4schjBE
+QIRjDC/JFMfqwiLVYyj04gTeg1IVVX/TL46/yvsv/z/X7X1ohwQZEbgoEixicZlF
+HMeTiNTPvCxzOOQM0IPcTr4U6TTvLFU0vkSRUDmotAE9UK6IyOit8Zl/QakGZQMu
+t6qpolqiR4o0zeWxG0rN5zLQN5Dg+NvEIShOSW+lrihHbo+iOoEd6qSoKYYrZGiO
+4SBOkTaA3nQpbuRQDIJiaBbTl5FHT2cHIo6LrETqzSAlXEY8IYoSTeAERZIMISNE
+QhzyDMkgRoacQPOEwLKEQEkyJ3AEIRHA+FaZUwV2Qi+TL9QtPUqhk9e8bgQq+3rz
+I0xhUaZHFpiNETNFRVr+GbxDnpgHnjPTvzV0bHFdmP62TLQsmuYjN4M531cbs1ob
+w6X2TvbuzZaqwOjzH35etbBfu3gz9ljpDOaO3t5T0Lsvpa82yQpDwW3Ja/dmrepR
+D8PUph3xe9ojXknPMUcXJ52e/z5pdN2T6Y0LEwpPxmcc7qpL+nQkFDNQUhednXOg
+eiDnizUDlyvF+ojSyK0qO3+13hqyBirCuvzZGZ1nzMuuxee1pCSq8Lkt/uSp0B+D
+eN6m8rx99pbuybsdzb+PfPKx9X5XcLDdu3/RWC43ONeQ2/rqkunLo3kj/QXdN579
+Ely7n/z0uwdmtx67Am+//VFv/4LtryVikXzmUyppahuqGh2y1tTZz6UlnDpbf2Ri
+3K5MplNpltvmpRMrltWFro9N+baZmr7J/Cziu1+kjMSWW3IHsIydWFzc1jESEz1b
+Hbthed+m+LbWCyeC78SsWP96jbLxZP78+eKktc077tjYhOHhuamf8TTtxr2Z1Us7
+vbvLYn4dXWklB+Oazr7f9BPYhVseH3z0rSJ17JkX82vfS726JHTQMnw9QakuYpXc
+WhM1u4e4k+xbs/K4aXqv74fTth8tHtPyyV3d/lO7bbcKJrznX5g/4r8ULIw92Lcz
+KqvkaCCFfsK8ocEcuHKpZl12IA07lPpyY1zwpfLHelb7e8LvDWWmRAIvbG5ZlV99
+/IPgeIX/67rN67WZPwEoALr+
+=m1JY
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/anmitalidev
+
+==================================================================
