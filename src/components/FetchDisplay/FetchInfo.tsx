@@ -28,6 +28,9 @@ export default function FetchInfo() {
         <InfoLine label="Music" value={userInfo.music} />
         <InfoLine label="Birthday" value={`${userInfo.birthday} • ${userInfo.age} y.o.`} />
         <InfoLine label="Timezone" value={userInfo.timezone} />
+        {userInfo.comment && (
+          <InfoLine label="Comment" value={userInfo.comment} />
+        )}
 
         <div className={styles.separator} />
 

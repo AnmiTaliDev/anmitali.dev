@@ -4,7 +4,7 @@ export const userInfo: UserInfo = {
   name: 'Ildar',
   nicknames: ['AnmiTaliDev', 'Aswot', 'AnmiTali'],
   from: 'Kazakhstan, Kostanay',
-  os: ['ArchLinux', 'FreeBSD', 'Gentoo'],
+  os: ['ArchLinux', 'OpenBSD', 'Gentoo'],
   roles: ['Developer', 'Learning Psychology', 'Cartographer'],
   favoriteColor: 'Dark shades of blue',
   music: [
@@ -13,7 +13,7 @@ export const userInfo: UserInfo = {
     'Би-2',
     'Дайте Танк (!)',
     'Dos-Muqasan',
-    'Гражданская оборона',
+    'Aphex Twin',
     'and etc.',
   ],
   birthday: '24.12.2012',
@@ -41,14 +41,14 @@ export const userInfo: UserInfo = {
       url: 'https://t.me/anmitalilog'
     },
     {
-      platform: 'Telegram Project',
-      handle: '@kostanay_native',
-      url: 'https://t.me/kostanay_native'
-    },
-    {
-      platform: 'Main project',
+      platform: 'GNU/Linux Project',
       handle: '@NurOS_tg',
       url: 'https://t.me/NurOS_tg'
+    },
+    {
+      platform: 'RTOS Project',
+      handle: '@bedrockRTOS',
+      url: 'https://t.me/bedrockRTOS'
     },
     {
       platform: 'OpenStreetMap',
@@ -56,6 +56,7 @@ export const userInfo: UserInfo = {
       url: 'https://openstreetmap.org/user/AnmiTaliDev'
     },
   ],
+  comment: 'Just not geography...',
   pgp: {
     fingerprint: 'F57B BC55 AC9D 822B 385F A2C9 0E0E 31E2 07AD F598',
     keybase: 'https://keybase.io/AnmiTaliDev',

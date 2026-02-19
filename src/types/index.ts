@@ -11,6 +11,7 @@ export interface UserInfo {
   timezone: string;
   social: SocialLink[];
   pgp: PGPInfo;
+  comment?: string;
 }
 
 export interface SocialLink {
