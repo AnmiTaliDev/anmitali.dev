@@ -1,0 +1,18 @@
+.codeBlock {
+  background-color: rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--bios-divider);
+  padding: 1rem;
+  margin-top: 0.6rem;
+}
+
+.codeLine {
+  white-space: pre;
+}
+
+.comment {
+  color: var(--bios-fg-dim);
+}
+
+.plain {
+  color: var(--bios-fg);
+}

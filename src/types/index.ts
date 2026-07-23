@@ -1,17 +1,11 @@
 export interface UserInfo {
   name: string;
-  nicknames: string[];
   from: string;
   os: string[];
-  roles: string[];
-  favoriteColor: string;
-  music: string[];
   birthday: string;
-  age: number;
   timezone: string;
   social: SocialLink[];
   pgp: PGPInfo;
-  comment?: string;
 }
 
 export interface SocialLink {
@@ -23,5 +17,22 @@ export interface SocialLink {
 export interface PGPInfo {
   fingerprint: string;
   keybase: string;
-  importScript: string[];
+  keyImportCommands: string[];
+}
+
+export interface BootEntry {
+  id: string;
+  label: string;
+  device: string;
+  help: string;
+  kind: 'local' | 'external';
+  href?: string;
+}
+
+export interface BlogPost {
+  slug: string;
+  title: string;
+  date: string;
+  content: string;
+  excerpt: string;
 }

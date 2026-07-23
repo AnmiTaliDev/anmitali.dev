@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Ildar - AnmiTaliDev',
-  description: 'Portfolio of Ildar - Developer, Psychology Student, Cartographer from Kazakhstan',
-  keywords: ['Ildar', 'AnmiTaliDev', 'Developer', 'ArchLinux', 'Portfolio'],
+  title: 'AnmiTaliDev :: BIOS Setup Utility',
+  description: 'Personal page of Hm (AnmiTaliDev), developer from Kazakhstan, presented as a BIOS setup utility',
+  keywords: ['AnmiTaliDev', 'Developer', 'ArchLinux', 'NurOS', 'bedrockRTOS', 'Portfolio'],
 };
 
 export default function RootLayout({

@@ -1,17 +1,8 @@
-import Terminal from '@/components/Terminal/Terminal';
-import FetchInfo from '@/components/FetchDisplay/FetchInfo';
+import BiosApp from '@/components/Bios/BiosApp';
+import { getAllPosts } from '@/lib/blog';
 
 export default function Home() {
-  return (
-    <main
-      style={{
-        minHeight: '100vh',
-        padding: '1rem',
-      }}
-    >
-      <Terminal>
-        <FetchInfo />
-      </Terminal>
-    </main>
-  );
+  const posts = getAllPosts();
+
+  return <BiosApp posts={posts} />;
 }

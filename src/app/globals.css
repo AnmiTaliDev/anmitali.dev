@@ -1,8 +1,12 @@
 :root {
-  --terminal-bg: #000000;
-  --terminal-fg: #e0e0e0;
-  --terminal-accent: #2d5a8f;
-  --terminal-bright: #4a90e2;
+  --bios-bg: #0000ab;
+  --bios-bg-dark: #000000;
+  --bios-fg: #c8d0e8;
+  --bios-fg-bright: #ffffff;
+  --bios-fg-dim: #8f9fc8;
+  --bios-divider: #4d5db0;
+  --bios-select-bg: #c9c9c9;
+  --bios-select-fg: #000000;
 }
 
 * {
@@ -15,43 +19,31 @@ html,
 body {
   height: 100%;
   font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
-  background-color: var(--terminal-bg);
-  color: var(--terminal-fg);
-  line-height: 1.6;
+  background-color: var(--bios-bg-dark);
+  color: var(--bios-fg);
+  line-height: 1.5;
   overflow-x: hidden;
 }
 
 a {
-  color: var(--terminal-bright);
+  color: inherit;
   text-decoration: none;
-  transition: color 0.2s ease;
 }
 
 a:hover {
   text-decoration: underline;
-  color: var(--terminal-accent);
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+button {
+  font-family: inherit;
 }
 
 @keyframes blink {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
     opacity: 0;
   }
-}
-
-.fade-in {
-  animation: fadeIn 0.5s ease-out;
 }

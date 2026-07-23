@@ -1,0 +1,38 @@
+.list {
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  color: var(--bios-fg);
+}
+
+.item:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.itemSelected,
+.itemSelected:hover {
+  background-color: var(--bios-select-bg);
+  color: var(--bios-select-fg);
+}
+
+.itemLabel {
+  color: var(--bios-fg-bright);
+}
+
+.itemSelected .itemLabel {
+  color: var(--bios-select-fg);
+}
+
+.itemMeta {
+  color: var(--bios-fg-dim);
+}
+
+.itemSelected .itemMeta {
+  color: var(--bios-select-fg);
+}
