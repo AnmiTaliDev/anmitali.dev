@@ -1,0 +1,22 @@
+---
+import Icon from './Icon.astro';
+import { fingerprint, importCommands, keybaseUrl } from '../data/pgp';
+---
+
+<section class="section">
+  <h2>PGP</h2>
+  <div class="card card-filled">
+    <div class="card-body">
+      <p class="label">Fingerprint</p>
+      <p><code class="fingerprint">{fingerprint}</code></p>
+      <p class="label">Import</p>
+      <pre><code>{importCommands}</code></pre>
+      <div>
+        <a class="btn btn-filled btn-md ripple focus-ring-outer" href={keybaseUrl} target="_blank" rel="noopener noreferrer">
+          <Icon name="key" />
+          Keybase
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
