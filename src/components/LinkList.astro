@@ -1,0 +1,27 @@
+---
+import Icon from './Icon.astro';
+import type { Link } from '../data/links';
+
+interface Props {
+  title: string;
+  links: Link[];
+}
+
+const { title, links } = Astro.props;
+---
+
+<section class="section">
+  <h2>{title}</h2>
+  <div class="list list-segmented">
+    {links.map((link) => (
+      <a class="list-item ripple focus-ring-inner" href={link.url} target="_blank" rel="noopener noreferrer">
+        <span class="list-item-leading"><Icon name={link.icon} /></span>
+        <span class="list-item-content">
+          <span>{link.title}</span>
+          <span class="list-item-supporting-text">{link.detail}</span>
+        </span>
+        <span class="list-item-trailing"><Icon name="open_in_new" /></span>
+      </a>
+    ))}
+  </div>
+</section>
