@@ -11,8 +11,9 @@ export const links: Link[] = [
   { icon: 'send', title: 'Telegram', detail: '@anmitali / @Aswot1', url: 'https://t.me/anmitali' },
   { icon: 'code', title: 'GitHub', detail: '@AnmiTaliDev', url: 'https://github.com/AnmiTaliDev' },
   { icon: 'forum', title: 'Reddit', detail: 'u/AnmiTaliDev', url: 'https://reddit.com/u/AnmiTaliDev' },
-  { icon: 'campaign', title: 'Telegram channel', detail: '@anmitalilog', url: 'https://t.me/anmitalilog' },
-  { icon: 'map', title: 'OpenStreetMap', detail: 'AnmiTaliDev', url: 'https://openstreetmap.org/user/AnmiTaliDev' },
+  { icon: 'cloud', title: 'Bluesky', detail: 'anmitali.dev', url: 'https://bsky.app/profile/anmitali.dev' },
+  { icon: 'campaign', title: 'Telegram channel', detail: '@thepagelog', url: 'https://t.me/thepagelog' },
+  { icon: 'map', title: 'OpenStreetMap', detail: 'AnmiTaliDev', url: 'https://openstreetmap.com/user/AnmiTaliDev' },
 ];
 
 export const projectLinks: Link[] = [
