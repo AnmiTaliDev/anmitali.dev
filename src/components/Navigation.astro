@@ -1,0 +1,60 @@
+---
+import Icon from './Icon.astro';
+import type { IconName } from '../data/icons';
+
+interface Destination {
+  icon: IconName;
+  label: string;
+  href: string;
+  active: boolean;
+}
+
+const path = Astro.url.pathname;
+
+const destinations: Destination[] = [
+  { icon: 'home', label: 'Home', href: '/', active: path === '/' },
+  { icon: 'article', label: 'Blog', href: '/blog/', active: path.startsWith('/blog') },
+];
+---
+
+<nav class="site-rail nav-rail nav-rail-vertical nav-rail-align-top" aria-label="Main">
+  <div class="nav-rail-items">
+    {destinations.map((item) => (
+      <a
+        class:list={[
+          'nav-rail-item nav-rail-item-vertical ripple focus-ring-inner',
+          { 'nav-rail-item-active': item.active },
+        ]}
+        href={item.href}
+        aria-current={item.active ? 'page' : undefined}
+      >
+        <span class="nav-rail-item-content">
+          <span class="nav-rail-item-indicator">
+            <span class="nav-rail-item-icon"><Icon name={item.icon} /></span>
+          </span>
+          <span class="nav-rail-item-label">{item.label}</span>
+        </span>
+      </a>
+    ))}
+  </div>
+</nav>
+
+<nav class="site-bar nav-bar nav-bar-vertical" aria-label="Main">
+  {destinations.map((item) => (
+    <a
+      class:list={[
+        'nav-bar-item nav-bar-item-vertical ripple focus-ring-inner',
+        { 'nav-bar-item-active': item.active },
+      ]}
+      href={item.href}
+      aria-current={item.active ? 'page' : undefined}
+    >
+      <span class="nav-bar-item-content">
+        <span class="nav-bar-item-icon-container">
+          <span class="nav-bar-item-icon"><Icon name={item.icon} /></span>
+        </span>
+        <span class="nav-bar-item-label">{item.label}</span>
+      </span>
+    </a>
+  ))}
+</nav>
