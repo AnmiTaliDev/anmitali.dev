@@ -1,0 +1,141 @@
+:root {
+  --md-ref-typeface-plain: var(--font-text);
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background: var(--md-sys-color-surface);
+  color: var(--md-sys-color-on-surface);
+  font: var(--md-sys-typescale-body-lg);
+}
+
+.md-icon {
+  font-family: var(--font-icons);
+  white-space: nowrap;
+}
+
+main {
+  box-sizing: border-box;
+  max-width: 45rem;
+  margin: 0 auto;
+  padding: 2rem 1rem 6rem;
+}
+
+h1 {
+  margin: 0;
+  font: var(--md-sys-typescale-emphasized-display-md);
+}
+
+h2 {
+  margin: 0 0 0.75rem;
+  color: var(--md-sys-color-primary);
+  font: var(--md-sys-typescale-emphasized-title-lg);
+}
+
+.prose a {
+  color: var(--md-sys-color-primary);
+}
+
+code,
+pre {
+  font-family: var(--font-code);
+  font-size: 0.875rem;
+}
+
+pre {
+  overflow-x: auto;
+  padding: 1rem;
+  border-radius: var(--md-sys-shape-corner-md);
+  background: var(--md-sys-color-surface-container-lowest);
+}
+
+.hero {
+  padding: 2rem;
+  border-radius: var(--md-sys-shape-corner-xxl);
+  background: var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-on-primary-container);
+}
+
+.hero p {
+  margin: 0.5rem 0 0;
+  font: var(--md-sys-typescale-title-lg);
+}
+
+.section {
+  margin-top: 2rem;
+}
+
+.list {
+  overflow: hidden;
+}
+
+.list-segmented .list-item {
+  --container-color: var(--md-sys-color-surface-container);
+}
+
+a.list-item,
+a.btn {
+  text-decoration: none;
+}
+
+.list-item .list-item-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-body p {
+  margin: 0 0 1rem;
+}
+
+.card-body .label {
+  margin-bottom: 0.25rem;
+  color: var(--md-sys-color-on-surface-variant);
+  font: var(--md-sys-typescale-label-lg);
+}
+
+.fingerprint {
+  overflow-wrap: anywhere;
+}
+
+.prose {
+  overflow-wrap: break-word;
+}
+
+.prose img {
+  max-width: 100%;
+}
+
+.site-rail {
+  display: none;
+}
+
+.site-bar {
+  position: fixed;
+  inset: auto 0 0;
+  z-index: 10;
+}
+
+@media (min-width: 600px) {
+  .site-bar {
+    display: none;
+  }
+
+  .site-rail {
+    display: flex;
+    position: fixed;
+    inset: 0 auto 0 0;
+  }
+
+  main {
+    padding-block: 3rem;
+  }
+
+  body {
+    padding-left: 6rem;
+  }
+}
