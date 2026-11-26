@@ -3,6 +3,7 @@ export const iconNames = [
   'arrow_back',
   'cake',
   'campaign',
+  'cloud',
   'code',
   'computer',
   'deployed_code',
@@ -15,8 +16,11 @@ export const iconNames = [
   'map',
   'memory',
   'open_in_new',
+  'person',
+  'record_voice_over',
   'schedule',
   'send',
+  'translate',
 ] as const;
 
 export type IconName = (typeof iconNames)[number];
