@@ -1,0 +1,31 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Icon from '../../components/Icon.astro';
+import { formatDate } from '../../data/format-date';
+import { handle } from '../../data/profile';
+
+const posts = (await getCollection('blog')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<BaseLayout title={`Blog | ${handle}`}>
+  <h1>Blog</h1>
+  <div class="section">
+    {posts.length === 0 ? (
+      <p>No posts yet.</p>
+    ) : (
+      <div class="list list-segmented">
+        {posts.map((post) => (
+          <a class="list-item ripple focus-ring-inner" href={`/blog/${post.id}/`}>
+            <span class="list-item-leading"><Icon name="article" /></span>
+            <span class="list-item-content">
+              <span class="list-item-overline">{formatDate(post.data.date)}</span>
+              <span>{post.data.title}</span>
+              {post.data.description && <span class="list-item-supporting-text">{post.data.description}</span>}
+            </span>
+          </a>
+        ))}
+      </div>
+    )}
+  </div>
+</BaseLayout>
