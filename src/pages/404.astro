@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Icon from '../components/Icon.astro';
+import { handle } from '../data/profile';
+---
+
+<BaseLayout title={`Page not found | ${handle}`}>
+  <header class="hero">
+    <h1>404</h1>
+    <p>Page not found.</p>
+  </header>
+  <div class="section">
+    <a class="btn btn-filled btn-md ripple focus-ring-outer" href="/">
+      <Icon name="home" />
+      Home
+    </a>
+  </div>
+</BaseLayout>
