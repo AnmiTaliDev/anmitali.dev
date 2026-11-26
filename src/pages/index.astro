@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FactList from '../components/FactList.astro';
+import LinkList from '../components/LinkList.astro';
+import PgpCard from '../components/PgpCard.astro';
+import { links, projectLinks, supportLinks } from '../data/links';
+import { handle, name } from '../data/profile';
+---
+
+<BaseLayout title={handle}>
+  <header class="hero">
+    <h1>{name}</h1>
+    <p>{handle}</p>
+  </header>
+  <FactList />
+  <LinkList title="Links" links={links} />
+  <LinkList title="Projects" links={projectLinks} />
+  <PgpCard />
+  <LinkList title="Support" links={supportLinks} />
+</BaseLayout>
