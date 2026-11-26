@@ -6,7 +6,7 @@ export interface Fact {
   value: string;
 }
 
-export const name = 'Hm';
+export const name = 'Ildar.. or Boranbay';
 export const handle = 'AnmiTaliDev';
 
 export const facts: Fact[] = [
@@ -14,4 +14,7 @@ export const facts: Fact[] = [
   { icon: 'computer', label: 'Operating systems', value: 'ArchLinux, OpenBSD, Gentoo' },
   { icon: 'cake', label: 'Birthday', value: '24.12.2??? • hm y.o.' },
   { icon: 'schedule', label: 'Time zone', value: 'UTC+5 (Asia/Astana)' },
+  { icon: 'record_voice_over', label: 'Pronouns', value: 'Any (pref. he/him) or Ol (Kazakh "he/she/it" supreme l<em>ol</em>)' },
+  { icon: 'person', label: 'Gender', value: 'Cisgender male' },
+  { icon: 'translate', label: 'Languages', value: 'Russian, English, Kazakh' },
 ];

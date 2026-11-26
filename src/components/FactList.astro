@@ -11,7 +11,7 @@ import { facts } from '../data/profile';
         <span class="list-item-leading"><Icon name={fact.icon} /></span>
         <span class="list-item-content">
           <span class="list-item-overline">{fact.label}</span>
-          <span>{fact.value}</span>
+          <span set:html={fact.value} />
         </span>
       </div>
     ))}
