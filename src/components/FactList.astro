@@ -1,0 +1,19 @@
+---
+import Icon from './Icon.astro';
+import { facts } from '../data/profile';
+---
+
+<section class="section">
+  <h2>About</h2>
+  <div class="list list-segmented">
+    {facts.map((fact) => (
+      <div class="list-item list-item-static">
+        <span class="list-item-leading"><Icon name={fact.icon} /></span>
+        <span class="list-item-content">
+          <span class="list-item-overline">{fact.label}</span>
+          <span>{fact.value}</span>
+        </span>
+      </div>
+    ))}
+  </div>
+</section>
