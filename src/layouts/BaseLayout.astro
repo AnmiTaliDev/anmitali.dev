@@ -1,0 +1,47 @@
+---
+import { Font } from 'astro:assets';
+import Navigation from '../components/Navigation.astro';
+import { buildThemeCss, themeNames } from '../theme/colors';
+import '@material/web/labs/gb/styles/m3.css';
+import '@material/web/labs/gb/components/ripple/ripple.css';
+import '@material/web/labs/gb/components/focus/focus-ring.css';
+import '@material/web/labs/gb/components/button/button.css';
+import '@material/web/labs/gb/components/card/card.css';
+import '@material/web/labs/gb/components/list/list.css';
+import '@material/web/labs/gb/components/navbar/nav-bar.css';
+import '@material/web/labs/gb/components/navrail/nav-rail.css';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Personal page of Hm (AnmiTaliDev), developer from Kazakhstan.' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <Font cssVariable="--font-text" preload />
+    <Font cssVariable="--font-code" />
+    <Font cssVariable="--font-icons" preload />
+    <style is:inline set:html={buildThemeCss()}></style>
+    <script is:inline define:vars={{ themeNames }}>
+      document.documentElement.dataset.theme = themeNames[Math.floor(Math.random() * themeNames.length)];
+    </script>
+  </head>
+  <body>
+    <Navigation />
+    <main>
+      <slot />
+    </main>
+    <script>
+      import '../scripts/ripple';
+    </script>
+  </body>
+</html>
